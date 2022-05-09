@@ -26,6 +26,7 @@ code {
 .inputt{
   text-align: center;
   font-size: 175%;
+  
 }
 .res1{
   text-align: center;
@@ -58,4 +59,12 @@ button{
 }
 input{
   margin:2%
+}
+#aa1{
+  text-align: center;
+  color:green;
+  margin:2%;
+}
+#aa2{
+  margin:2%;
 }

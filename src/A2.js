@@ -8,16 +8,35 @@ Papa.parse(csvFile, {
     download: true,
     complete: function (input) {
          records = input.data;
-        //  console.log(records);
     }
 });
-// console.log(records);
-export default function A1(){
-    
+
+export default function A2(){
+    const[a1,setA1]=React.useState(0);
+    console.log(a1);
+    if(a1===0){
     return (
-        
         <div>
-            <div id="heading1">Welcome to the history of IPL</div>
+            <div class ="inputt" id="aa2">
+            <div id="aa1">Search data using one of the given options: either by searching the date or by team name</div>
+            <div>Search by date: <button type='button' onClick={function(){
+                setA1(1);
+                console.log(a1);
+
+            }}> Search </button></div></div>
+            <div class="inputt">
+            <div>Search by Team: <button type='button' onClick={function(){
+                setA1(2);
+                console.log(a1);
+
+            }}> Search </button></div></div>
+            
+        </div>
+    )}
+    else if(a1===1){
+        return(
+            <div>
+            <div></div>
             
             <div id="search_by_date" class="inputt">
             <div>Search By Dates</div>
@@ -79,11 +98,20 @@ export default function A1(){
                 
                 document.getElementById('mes1').innerHTML=res;
                 console.log(date1);
-            }}>Search</button></div></div>
+            }}>Search</button>&nbsp;
+            <button type="button" onClick={function(){
+                setA1(0);
+            }}>Prev</button>
+            </div></div>
             <div id="mes1" class="res1"></div>
-
-
-            <div class="inputt">
+            </div>
+        )
+    }
+    else if(a1===2){
+        return(
+            <div>
+                <div></div>
+                <div class="inputt">
                 <div>Search By Teams</div>
             <div id="search_by_team">Enter the name of the team: 
             <input id="input2" type="text" placeholder='Mumbai Indians'></input></div>
@@ -157,10 +185,15 @@ export default function A1(){
                     }
                     document.getElementById('aps1').innerHTML=res;
 
-                }}>Search</button></div>
+                }}>Search</button>&nbsp;
+                <button type="button" onClick={function(){
+                setA1(0);
+            }}>Prev</button></div>
                 
             </div>
             <div id="aps1" class="res1"></div>
-        </div>
-    );
+            </div>
+        )
+    }
+
 }

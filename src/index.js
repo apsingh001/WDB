@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import A1 from './A1';
+
 import './index.css';
+import A2 from './A2';
+import H1 from './Heading';
 
 
 
 
 ReactDOM.render(
-  <div><A1/></div>,
+  <div><H1/><A2/></div>,
   document.getElementById('root')
 );
