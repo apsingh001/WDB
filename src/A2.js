@@ -68,7 +68,7 @@ export default function A2(){
 
                 }
                 if(z===-1){
-                    res="There was no match as that day."
+                    res="There was no match on that day."
                 }
                 else{
                     if(y===1){
