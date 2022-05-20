@@ -1,5 +1,5 @@
 body {
-  background-color: antiquewhite;
+  background-color: rgb(207, 204, 231);
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -67,4 +67,90 @@ input{
 }
 #aa2{
   margin:2%;
+}
+
+.aaa1{
+  display:flex;
+  flex-direction: row; 
+  justify-content: space-evenly;
+  
+ } 
+
+.left1{
+  text-align: left;
+  flex:1;
+  text-align: justify;
+  width:50%;
+  margin-left: 100px;
+}
+.right1{
+  flex:1;
+  text-align: justify;
+  /* margin: 60px; */
+  margin-right: 100px;
+}
+
+.Total1{
+  border: 1px solid black;
+  text-align: justify;
+  width:40%;
+  margin-bottom:10px;
+}
+.Playing1{
+  width:60%;
+  border: 1px solid black;
+  text-align: left;
+  /* margin-left: 100px; */
+  margin-bottom:10px;
+  border-radius: 5%;
+  background-color: rgb(182, 212, 212);
+}
+
+.toss{
+  text-align: left;
+  margin-left: 100px;
+  border: 1px solid black;
+  margin-bottom:10px;
+  width:40%;
+  border-radius: 5%;
+  background-color: rgb(182, 212, 212);
+}
+
+.Heading1{
+  font-size: 200%;
+  font-weight: bold;
+}
+
+.Heading2{
+  font-size: 120%;
+  font-weight: bold;
+}
+.Heading6{
+  margin:1%;
+  color:rgb(48, 4, 151);
+}
+
+.TeamName{
+  font-size: 120%;
+  font-weight: bold;
+}
+.Total1{
+  text-align: left;
+  /* margin-left: 100px; */
+  border: 1px solid black;
+  margin-bottom:10px;
+  width:40%;
+  border-radius: 5%;
+  background-color: rgb(182, 212, 212);
+}
+
+#nf{
+  text-align: center;
+  font-size: 200%;
+  color: rgb(76, 0, 255);
+  margin: 5%;
+  border:1px solid black;
+  border-radius: 10%;
+  background-color: rgb(185, 209, 209);
+
 }
