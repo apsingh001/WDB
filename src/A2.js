@@ -444,23 +444,23 @@ export default function A2(){
             </div>
             <div class="right1" style={{ maxWidth: "650px" }}>Runs Per Over<Bar
           data={{
-            // Name of the variables on x-axies for each bar
+            
             labels: yaxiss,
             datasets: [
               {
-                // Label for bars
+                
                 label: "Runs/Over",
-                // Data or value of your each variable
+               
                 data: run_array_per_over1,
-                // Color of each bar
+                
                 backgroundColor: ["green"],
-                // Border color of each bar
+                
                 borderColor: ["green"],
                 borderWidth: 0.5,
               },
             ],
           }}
-          // Height of graph
+          
           height={200}
         /></div> </div>
 
@@ -474,23 +474,23 @@ export default function A2(){
         </div>
             <div class="right1" style={{ maxWidth: "650px" }}> Runs Per Over<Bar
           data={{
-            // Name of the variables on x-axies for each bar
+            
             labels: yaxiss,
             datasets: [
               {
-                // Label for bars
+                
                 label: "Runs/Over",
-                // Data or value of your each variable
+                
                 data: run_array_per_over2,
-                // Color of each bar
+                
                 backgroundColor: ["blue"],
-                // Border color of each bar
+                
                 borderColor: ["blue"],
                 borderWidth: 0.5,
               },
             ],
           }}
-          // Height of graph
+          
           height={200}
         /></div></div>
 
